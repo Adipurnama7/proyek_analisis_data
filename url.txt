@@ -1,1 +1,1 @@
-http://localhost:8501/
+https://adipurnama7-proyek-analisis-data-dashboarddashboard-mja9f5.streamlit.app/

@@ -2,9 +2,11 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
+
 # Load dataset
-df_payment = pd.read_csv("data/order_payments_dataset.csv")
-df_sellers = pd.read_csv("data/sellers_dataset.csv")
+df_payment = pd.read_csv("../data/order_payments_dataset.csv")
+df_sellers = pd.read_csv("../data/sellers_dataset.csv")
+
 
 # Judul Dashboard
 st.title("📊 Dashboard Analisis Metode Pembayaran & Aktivitas Penjual")
@@ -28,7 +30,7 @@ ax.set_xlabel("Metode Pembayaran")
 ax.set_ylabel("Jumlah Transaksi")
 ax.set_title("Distribusi Metode Pembayaran")
 
-# Beri warna khusus pada metode yang dipilih
+# warna khusus pada metode yang dipilih
 highlight_color = "red"
 ax.bar(selected_payment, payment_counts[selected_payment], color=highlight_color)
 
@@ -59,7 +61,7 @@ ax2.set_xlabel("Negara Bagian")
 ax2.set_ylabel("Jumlah Penjual")
 ax2.set_title("Distribusi Penjual per Negara Bagian")
 
-# Beri warna khusus pada negara bagian yang dipilih
+# warna khusus pada negara bagian yang dipilih
 ax2.bar(selected_state, seller_counts[selected_state], color=highlight_color)
 
 # Tampilkan grafik

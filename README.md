@@ -6,7 +6,7 @@
 ### **1. Clone the Repository**
 ```sh
 git clone https://github.com/Adipurnama7/proyek_analisis_data.git
-cd Analysis Data
+cd Proyek Analysis Data
 ```
 
 ### **2. Create a Virtual Environment (Windows)**
